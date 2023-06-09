@@ -1,0 +1,174 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;700&family=Montserrat:wght@500&family=Outfit:wght@100;800&family=Overpass:wght@400;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;700&family=Montserrat:wght@500&family=Outfit:wght@100;800&family=Overpass:wght@400;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+background-color: black;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+main {
+  height: 100vh;
+  width: 85.6%;
+  margin: auto;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container{
+    height: 56%;
+    max-width: 41.7%;
+    display: flex;
+}
+
+.first-section{
+    background-image: url(./images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    opacity: .9;
+    filter: brightness(80%);
+    
+    border-radius: .4rem 0 0 .4rem;
+}
+
+.second-section{
+    width: 50%;
+    background-color: white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 .4rem .4rem 0;
+}
+
+.second-section > h6{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: .2rem;
+    
+}
+
+.second-section > p{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: .65rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+
+.second-section > h2{
+    color:hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.second-section > div> h2 {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+
+.second-section > div> h6{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    font-size: .65rem;
+    font-weight: 500;
+}
+
+.second-section > button{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: .3rem;
+    color: white;
+    padding: .7rem 1rem;
+    font-size: .7rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: .55rem;
+}
+
+.second-section > button > img{
+    height: .7rem;
+    
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    column-gap: .7rem;
+}
+
+@media (max-width: 1000px){
+body{
+    background-color: red;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    max-width: 80%;
+    margn: auto;
+    
+}
+
+.first-section{
+    background-color: pink;
+    background-image:  url(./images/image-product-mobile.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 35%;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.second-section{
+    height: 50%;
+    width: 100%;
+    border-radius:  0 0 .5rem .5rem;
+} 
+
+
+
+
+
+
+
+
+}
+/* Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
